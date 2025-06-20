@@ -43,3 +43,21 @@ template: !include templates.yaml
 ```
 For more information, see [splitting configuration.yaml](https://www.home-assistant.io/docs/configuration/splitting_configuration/)
 
+## Speakers
+
+By default Assist responds to built-in commands through the voice assistant that heard the command. This is difficult to change short of hacking the voice assistant device itself. (If your voice assistant is an ESPHome device some [configuration tools](https://esphome.io/components/voice_assistant.html) are provided.)
+
+This is one reason for choosing to use custom sentences and intents - the response can be played through any speaker you like.
+
+The examples in this repository call a script to deliver TTS sentences.
+```
+    - action: script.tts_response
+      data:
+        tts_sentence: "Whatever you need to say..."
+```
+If you don't want to do this you can simply use ```speech``` instead:
+```
+    speech:
+      text: Whatever you want to say.
+```
+
