@@ -8,3 +8,5 @@ There are good reasons for wanting to use custom sentences and intents in Home A
 * Custom sentences give more control over input than sentence triggers in an automation
 
 Documentation exists for [custom sentence syntax](https://developers.home-assistant.io/docs/voice/intent-recognition/template-sentence-syntax/), but there is very little for intents. They are referred to as [Intent scripts](https://www.home-assistant.io/integrations/intent_script/) but they are actually an odd mixture of script and template.
+
+This repository aims to provide a few working examples.
