@@ -1,1 +1,1 @@
-# custom-sentences-and-intents-in-Home-Assistant
+# Custom sentences and intents in Home Assistant
