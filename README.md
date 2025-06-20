@@ -26,4 +26,12 @@ Examples may be in four parts:
 
 The fourth part contains templates which may be used to construct phrases outside the intent. This is good practice if you want to maintain your intents easily. It also means that common phrases can be reused in different intents.
 
-* 
+## Storage
+
+Custom sentence have to be saved as yaml files in ```config/custom_sentences/<language_code>/``` with a separate file for each sentence. Being in English, the examples here are saved in ```config/custom_sentences/en/```. The name of the yaml file doesn't matter, but they should all begin with
+```
+language: "en"
+intents:
+  <IntentName>:
+```
+where ```<IntentName>``` is the name of the intent the sentence points to.
