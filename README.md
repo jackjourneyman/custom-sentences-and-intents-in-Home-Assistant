@@ -35,3 +35,10 @@ intents:
   <IntentName>:
 ```
 where ```<IntentName>``` is the name of the intent the sentence points to.
+
+Intents are stored in ```configuration.yaml```, but they will grow rapidly (as do templates), so it is good practice to keep them in yaml files of their own, then add this to ```configuration.yaml```
+```
+intent_script: !include intents.yaml
+template: !include templates.yaml
+```
+
