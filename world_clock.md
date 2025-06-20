@@ -41,4 +41,4 @@ CustomWorldClock:
         - "New York"
         - "Paris"
   ```
-But if the user gave a name not on the list, the intent would fall back on the default Assist message "Sorry I didn't understand that". Using a wildcard makes it possible to filter out unknown entities in the intent and provide a custom message. (It is not currently possible to define a default value in a list.)
+&nbsp;&nbsp;&nbsp;But if the user gave a name not on the list, the intent would fall back on the default Assist message "Sorry I didn't understand that". Using a wildcard makes it possible to filter out unknown entities in the intent and provide a custom message. (It is not currently possible to define a default value in a list.)
