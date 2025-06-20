@@ -45,7 +45,7 @@ You could list the locations for which sensors have been defined in the custom s
   ```
 But if the user gave a name not on the list, the intent would fall back on the default Assist message "Sorry I don't understand". Using a wildcard makes it possible to filter out unknown entities in the intent and provide a custom message. (It is not currently possible to define a default value in a list.)
 
-**In the intent**
+**In the intent...**
 ```
     - variables:
         time: "{{ states('sensor.worldclock_' ~ city|replace(' ', '_')|lower) }}"
