@@ -22,7 +22,7 @@ CustomWorldClock:
     - action: script.willow_tts_response
       data:
         tts_sentence: >-
-          {% if time != 'unknown' %}
+          {% if time != 'unknown' and time != 'unavailable' %}
             "The time in {{ city }} is {{ time }}"
           {% else %}
             "Sorry, I didn't catch the city name."
