@@ -23,11 +23,35 @@ CustomWorldClock:
       data:
         tts_sentence: >-
           {% if time != 'unknown' and time != 'unavailable' %}
-            "The time in {{ city }} is {{ time }}"
+            "{{ states('sensor.starter_phrase') }}. The time in {{ city }} is {{ time }}"
           {% else %}
             "Sorry, I didn't catch the city name."
           {% endif %}
 ```
+## Template
+```
+  - trigger:
+      platform: time_pattern
+      minutes: /1
+    sensor:
+      - name: Starter phrase
+        state: >
+          {{ [
+          "Well.",
+          "",
+          "Okay.",
+          "",
+          "Right. well.",
+          "",
+          "So.",
+          "",
+          "Okay. So.",
+          ""
+          "Okay then.",
+          ""
+          ] | random }}
+```
+
 ## Notes
 
 **In the custom sentence...**
@@ -51,4 +75,8 @@ But if the user gave a name not on the list, the intent would fall back on the d
         time: "{{ states('sensor.worldclock_' ~ city|replace(' ', '_')|lower) }}"
 ```
 This takes the value passed from the custom sentence ```city``` and adds it to the string ```sensor.worldclock_``` to create a sensor name, then replaces spaces with underscores (New York becomes New_York) and changes everything to lowercase. The state of the resulting sensor is stored in the variable ```time```.
+
+**Templates...**
+
+```sensor.starter_phrase``` is an optional template sensor containing a random (and meaningless) phrase to start the sentence with. Phrases change every minute. Notice that half the phrases are empty strings, so the expression will only be heard 50% of the time.
 
