@@ -32,7 +32,7 @@ CustomWorldClock:
 
 **In the custom sentence...**
 
-This sentence/intent makes use of the [Worldclock integration](https://www.home-assistant.io/integrations/worldclock/) which generates sensors for places and timezones in the format ```sensor.worldclock_<place>```
+This sentence/intent makes use of the internal [Worldclock integration](https://www.home-assistant.io/integrations/worldclock/) which generates sensors for places and timezones in the format ```sensor.worldclock_<place>```
 
 You could list the locations for which sensors have been defined in the custom sentence:
   ```
