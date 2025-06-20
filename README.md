@@ -58,6 +58,6 @@ The examples in this repository call a script to deliver TTS sentences.
 If you don't want to do this you can simply use ```speech``` instead:
 ```
     speech:
-      text: Whatever you want to say.
+      text: Whatever you need to say...
 ```
 
