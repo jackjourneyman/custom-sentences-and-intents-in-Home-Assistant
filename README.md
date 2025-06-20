@@ -14,3 +14,16 @@ This repository aims to provide a few working examples.
 ## Index
 
 Links to sentence/intent scripts go here...
+
+## Format
+
+Examples may be in four parts:
+
+* Notes
+* Custom sentence
+* Intent
+* Templates
+
+The fourth part contains templates which may be used to construct phrases outside the intent. This is good practice if you want to maintain your intents easily. It also means that common phrases can be reused in different intents.
+
+* 
