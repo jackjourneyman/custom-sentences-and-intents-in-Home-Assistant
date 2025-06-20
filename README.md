@@ -41,4 +41,5 @@ Intents are stored in ```configuration.yaml```, but their number will grow rapid
 intent_script: !include intents.yaml
 template: !include templates.yaml
 ```
+For more information, see https://www.home-assistant.io/docs/configuration/splitting_configuration/
 
