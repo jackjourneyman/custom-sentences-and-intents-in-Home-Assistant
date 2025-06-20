@@ -13,7 +13,7 @@ This repository aims to provide a few working examples.
 
 ## Index
 
-Links to sentence/intent scripts go here...
+[World Clock](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/world_clock.md)
 
 ## Format
 
@@ -36,7 +36,7 @@ intents:
 ```
 where ```<IntentName>``` is the name of the intent the sentence points to.
 
-Intents are stored in ```configuration.yaml```, but they will grow rapidly (as do templates), so it is good practice to keep them in yaml files of their own, then add this to ```configuration.yaml```
+Intents are stored in ```configuration.yaml```, but their number will grow rapidly (the same with templates), so it is good practice to keep them in yaml files of their own, then add this to ```configuration.yaml```
 ```
 intent_script: !include intents.yaml
 template: !include templates.yaml
