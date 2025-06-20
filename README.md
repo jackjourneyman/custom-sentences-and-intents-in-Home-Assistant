@@ -14,6 +14,8 @@ This repository aims to provide a few working examples.
 ## Index
 
 [World Clock](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/world_clock.md)
+_____________________________________________
+[Speaker script](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/speaker_script.md)
 
 ## Format
 
@@ -49,7 +51,7 @@ By default Assist responds to built-in commands through the voice assistant that
 
 This is one reason for choosing to use custom sentences and intents - the response can be played through any speaker you like.
 
-The examples in this repository call a script to deliver TTS sentences.
+The examples in this repository call a [script](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/speaker_script.md) to deliver TTS sentences.
 ```
     - action: script.tts_response
       data:
