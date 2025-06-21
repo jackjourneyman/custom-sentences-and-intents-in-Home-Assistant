@@ -138,6 +138,8 @@ AddShoppingListItem:
 
 ```{{ states('sensor.finished_phrase') }}``` A [random phrase](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/random_phrases.md) to finish off the response - "OK done", etc.
 
+--------------------------------------------------
+
 ## Take coffee off the shopping list
 
 **Custom sentence**
