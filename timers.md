@@ -6,6 +6,75 @@ You can control timers previously created in HA with the [timer helper](https://
 
 # Start timer
 
+## Custom sentence
+```
+language: "en"
+intents:
+  CustomTimerSet:
+    data:
+      # All times
+      - sentences:
+          - "(start|set) [(a|the)] timer (for|to) {hours} (hour|hours) [and] {minutes} (minute|minutes) [and] {seconds} (second|seconds)"
+      # All one hour
+      - sentences:
+          - "(start|set) [(a|the)] timer (for|to) {hours} (hour|hours)"
+        slots:
+          seconds: 0
+          minutes: 0
+      # All one minute
+      - sentences:
+          - "(start|set) [(a|the)] timer (for|to) {minutes} (minute|minutes)"
+        slots:
+          seconds: 0
+          hours: 0
+      # All one second
+      - sentences:
+          - "(start|set) [(a|the)] timer (for|to) {seconds} (second|seconds)"
+        slots:
+          minutes: 0
+          hours: 0
+      # Minutes and seconds
+      - sentences:
+          - "(start|set) [(a|the)] timer (for|to) {minutes} (minute|minutes) [and] {seconds} (second|seconds)"
+        slots:
+          hours: 0
+      # Hours and minutes
+      - sentences:
+          - "(start|set) [(a|the)] timer (for|to) {hours} (hour|hours) [and] {minutes} (minute|minutes)"
+        slots:
+          seconds: 0
+      # Halves
+      - sentences:
+          - "(start|set) [(a|the)] timer (for|to) half a minute"
+        slots:
+          hours: 0
+          minutes: 0
+          seconds: 30
+      - sentences:
+          - "(start|set) [(a|the)] timer (for|to) {minutes} and a half minutes"
+        slots:
+          hours: 0
+          seconds: 30
+      - sentences:
+          - "(start|move) [(a|the)] timer (for|to) {hours} and a half hours"
+        slots:
+          minutes: 30
+          seconds: 0
+lists:
+  seconds:
+    range:
+      from: 0
+      to: 120
+  minutes:
+    range:
+      from: 0
+      to: 120
+  hours:
+    range:
+      from: 0
+      to: 24
+```
+
 ## Intent
 ```
 CustomTimerSet:
