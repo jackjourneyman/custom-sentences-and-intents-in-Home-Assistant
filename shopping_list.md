@@ -35,4 +35,4 @@ CustomShoppingList:
 ```
 **Notes**
 
-```{{ states('sensor.starter_phrase') }}``` A random phrase to start off the response - "OK then", etc.
+```{{ states('sensor.starter_phrase') }}``` A [random phrase](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/random_phrases.md) to start off the response - "OK then", etc.
