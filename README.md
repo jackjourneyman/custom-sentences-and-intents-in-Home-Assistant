@@ -24,6 +24,7 @@ Templates can be used to construct phrases outside the intent. This is good prac
 
 ### Intents
 
+[Caledar - "What's in the diary?"](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/calendar)
 [World Clock](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/world_clock.md)
 
 ### Scripts
