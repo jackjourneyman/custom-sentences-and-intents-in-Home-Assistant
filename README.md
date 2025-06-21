@@ -18,6 +18,8 @@ Templates can be used to construct phrases outside the intent. This is good prac
 
 [Calendar](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/calendar.md)
 
+[Timers](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/timers.md)
+
 [World Clock](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/world_clock.md)
 
 ### Scripts
