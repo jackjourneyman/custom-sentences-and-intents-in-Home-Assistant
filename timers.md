@@ -79,13 +79,33 @@ lists:
 ```
 CustomTimerSet:
   action:
-    - action: script.voice_timer_2
+    - action: script.voice_timer
       data:
         duration: "{{hours | int(default=0)}}:{{ minutes | int(default=0) }}:{{ seconds | int(default=0) }}"
     - action: script.willow_tts_response
       data:
         tts_sentence: "{{ states('sensor.finished_phrase') }}. Timer started."
 ```
+## Script
+
+```
+sequence:
+  - action: timer.start
+    metadata: {}
+    data:
+      duration: "{{ duration }}"
+    target:
+      entity_id: timer.voice_timer
+fields:
+  duration:
+    selector:
+      time: {}
+    name: duration
+    default: "00:00:00"
+    required: true
+alias: Voice timer
+```
+
 -------------------------------------
 # Stop timer
 
@@ -108,6 +128,16 @@ CustomTimerCancel:
       data:
         tts_sentence: "{{ states('sensor.finished_phrase') }}. Timer cancelled."
 ```
+## Script
+```
+sequence:
+  - action: timer.cancel
+    metadata: {}
+    data: {}
+    target:
+      entity_id: timer.voice_timer
+alias: Voice timer cancel
+```
 -------------------------------------
 # Pause timer
 
@@ -129,6 +159,16 @@ CustomTimerPause:
     - action: script.willow_tts_response
       data:
         tts_sentence: "{{ states('sensor.finished_phrase') }}. Timer paused."
+```
+## Script
+```
+sequence:
+  - action: timer.pause
+    metadata: {}
+    data: {}
+    target:
+      entity_id: timer.voice_timer
+alias: Voice timer pause
 ```
 --------------------------------------
 # Resume timer
@@ -154,4 +194,42 @@ CustomTimerResume:
     - action: script.willow_tts_response
       data:
         tts_sentence: "{{ states('sensor.finished_phrase') }}. Timer started again."
+```
+## Script
+```
+sequence:
+  - action: timer.start
+    metadata: {}
+    data: {}
+    target:
+      entity_id: timer.voice_timer
+fields: {}
+alias: Voice timer resume
+```
+---------------------------------------
+
+# Timer finished automation (optional)
+```
+alias: Voice timer finished
+triggers:
+  - trigger: state
+    entity_id:
+      - timer.voice_timer
+    to: idle
+    from: active
+conditions: []
+actions:
+  - action: script.willow_chime
+    metadata: {}
+    data: {}
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 2
+      milliseconds: 0
+  - action: script.willow_tts_response
+    metadata: {}
+    data:
+      tts_sentence: Your timer has finished
+mode: single
 ```
