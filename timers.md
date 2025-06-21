@@ -82,7 +82,7 @@ CustomTimerSet:
     - action: script.voice_timer
       data:
         duration: "{{hours | int(default=0)}}:{{ minutes | int(default=0) }}:{{ seconds | int(default=0) }}"
-    - action: script.willow_tts_response
+    - action: script.tts_response
       data:
         tts_sentence: "{{ states('sensor.finished_phrase') }}. Timer started."
 ```
@@ -129,7 +129,7 @@ intents:
 CustomTimerCancel:
   action:
     - action: script.voice_timer_cancel
-    - action: script.willow_tts_response
+    - action: script.tts_response
       data:
         tts_sentence: "{{ states('sensor.finished_phrase') }}. Timer cancelled."
 ```
@@ -161,7 +161,7 @@ intents:
 CustomTimerPause:
   action:
     - action: script.voice_timer_pause
-    - action: script.willow_tts_response
+    - action: script.tts_response
       data:
         tts_sentence: "{{ states('sensor.finished_phrase') }}. Timer paused."
 ```
@@ -196,7 +196,7 @@ intents:
 CustomTimerResume:
   action:
     - action: script.voice_timer_resume
-    - action: script.willow_tts_response
+    - action: script.tts_response
       data:
         tts_sentence: "{{ states('sensor.finished_phrase') }}. Timer started again."
 ```
@@ -224,7 +224,7 @@ triggers:
     from: active
 conditions: []
 actions:
-  - action: script.willow_chime
+  - action: script.chime
     metadata: {}
     data: {}
   - delay:
@@ -232,7 +232,7 @@ actions:
       minutes: 0
       seconds: 2
       milliseconds: 0
-  - action: script.willow_tts_response
+  - action: script.tts_response
     metadata: {}
     data:
       tts_sentence: Your timer has finished
