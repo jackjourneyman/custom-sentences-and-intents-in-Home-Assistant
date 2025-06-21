@@ -28,30 +28,6 @@ CustomWorldClock:
             "Sorry, I didn't catch the city name."
           {% endif %}
 ```
-## Template
-```
-  - trigger:
-      platform: time_pattern
-      minutes: /1
-    sensor:
-      - name: Starter phrase
-        state: >
-          {{ [
-          "Well.",
-          "",
-          "Okay.",
-          "",
-          "Right. well.",
-          "",
-          "So.",
-          "",
-          "Okay. So.",
-          ""
-          "Okay then.",
-          ""
-          ] | random }}
-```
-
 ## Notes
 
 **In the custom sentence...**
