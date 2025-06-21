@@ -7,6 +7,7 @@ intents:
   CustomCalendarToday:
     data:
       - sentences:
+          - "(What's | What is) happening"
           - "(What's | What is) in the (calendar | diary) [for] today"
           - "(What's | What is) in the (calendar | diary)"
 ```
@@ -60,6 +61,7 @@ intents:
   CustomCalendarTomorrow:
     data:
       - sentences:
+          - "(What's | What is) happening tomorrow"
           - "(What's | What is) in the (calendar | diary) [for] tomorrow"
 ```
 
@@ -104,6 +106,7 @@ intents:
   CustomCalendarWeek:
     data:
       - sentences:
+          - "(What's | What is) happening (this | next) week"
           - "(What's | What is) in the (calendar | diary) [for] (this | next) week"
 ```
 ## Intent
