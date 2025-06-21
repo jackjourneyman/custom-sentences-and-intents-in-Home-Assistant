@@ -49,5 +49,43 @@ CustomCalendarToday:
 ```
 Fetches calendar events for the rest of the day.
 
+# What's in the diary tomorrow?
+
+## Custom sentence
+```
+language: "en"
+intents:
+  CustomCalendarTomorrow:
+    data:
+      - sentences:
+          - "(What's | What is) in the (calendar | diary) [for] tomorrow"
+```
+
+## Intent
+```
+CustomCalendarTomorrow:
+  action:
+    - action: calendar.get_events
+      target:
+        entity_id: calendar.mycalendar
+      data:
+        start_date_time: "{{ (now() + timedelta(days=1)).strftime('%Y-%m-%d 00:00:00') }}"
+        end_date_time: "{{ (now() + timedelta(days=2)).strftime('%Y-%m-%d 00:00:00') }}"
+      response_variable: diary
+    - action: script.willow_tts_response
+      data:
+        tts_sentence: >-
+          {% if states('sensor.number_of_events_tomorrow') | float(0) > 0 %}
+          Tomorrow you've got, 
+          {% for event in diary['calendar.mycalendar'].events %} 
+          {{ event.summary }}.
+          {% endfor %}
+          {% else %}
+          Nothing tomorrow.
+          {% endif %}
+```
+
+
+
 
 
