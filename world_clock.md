@@ -55,7 +55,7 @@ This takes the value passed from the custom sentence ```city``` and adds it to t
 ```
 {% if time != 'unknown' and time != 'unavailable' %}
 ```
-If the sensor hasn't been defined in the [worldclock](https://www.home-assistant.io/integrations/worldclock/) integration the value of ```sensor.worldclock_xxxx```. will be "unknown".
+If the sensor hasn't been defined in the [worldclock integration](https://www.home-assistant.io/integrations/worldclock/) the value of ```sensor.worldclock_<place>```. will be "unknown".
 
 **Templates...**
 
