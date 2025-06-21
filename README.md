@@ -25,7 +25,7 @@ This repository aims to provide a few working examples.
 
 [Random phrases](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/random_phrases.md)
 
-
+&nbsp;
 > Descriptions of intents are in three parts:
 > 
 > * Custom sentence
