@@ -54,5 +54,5 @@ This takes the value passed from the custom sentence ```city``` and adds it to t
 
 **Templates...**
 
-```sensor.starter_phrase``` is an optional template sensor containing a random (and meaningless) phrase to start the sentence with. Phrases change every minute. Notice that half the phrases are empty strings, so the expression will only be heard 50% of the time.
+```sensor.starter_phrase``` is an optional template sensor containing a [random (and meaningless) phrase](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/random_phrases.md) to start the sentence with. Phrases change every minute. Notice that half the phrases are empty strings, so the expression will only be heard 50% of the time.
 
