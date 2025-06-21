@@ -25,4 +25,4 @@ If you want to give your voice a bit of character, you can add random phrases to
           ] | random }}
 ```
 
-To include this in an intent sentence, add ```{{ starter_phrase }}```.
+To include this in an intent sentence, add ```{{ states('sensor.starter_phrase') }}```.
