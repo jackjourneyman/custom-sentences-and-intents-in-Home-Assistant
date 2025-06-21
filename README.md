@@ -34,6 +34,7 @@ Templates can be used to construct phrases outside the intent. This is good prac
 
 [Random phrases](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/random_phrases.md)
 
+&nbsp;
 ## Storage
 
 Custom sentences have to be saved as yaml files in ```config/custom_sentences/<language_code>/``` with a separate file for each sentence. Being in English, the examples here are saved in ```config/custom_sentences/en/```. The name of the yaml file doesn't matter, but they should all begin with
