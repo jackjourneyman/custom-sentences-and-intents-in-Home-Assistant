@@ -52,6 +52,16 @@ template: !include templates.yaml
 ```
 For more information, see [splitting configuration.yaml](https://www.home-assistant.io/docs/configuration/splitting_configuration/)
 
+## "Collisions"
+
+In theory custom sentences should take precedence over built-in sentences, but this doesn't always happen. It's a particular problem when the custom sentence contains the words "in" or "on" - "Whats in the diary for today" is likely to give the error "No area named diary".
+
+Collisions can sometimes be avoided by using domain filtering.
+```
+requires_context:
+  domain: cover
+```
+
 ## Speakers
 
 By default Assist responds to built-in commands through the voice assistant that heard the command. This is difficult to change short of hacking the voice assistant device itself. (If your voice assistant is an ESPHome device some [configuration tools](https://esphome.io/components/voice_assistant.html) are provided.)
