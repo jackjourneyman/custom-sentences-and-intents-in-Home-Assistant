@@ -25,15 +25,13 @@ This repository aims to provide a few working examples.
 
 [Random phrases](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/random_phrases.md)
 
-## Format
-
-Examples may be in three parts:
+Descriptions of intents are in three parts:
 
 * Custom sentence
 * Intent
 * Notes
 
-You can use templates to construct phrases outside the intent. This is good practice if you want to maintain your intents easily. It also means that common phrases can be reused in different intents.
+Templates can be used to construct phrases outside the intent. This is good practice if you want to maintain your intents easily. It also means that common phrases can be reused in different intents.
 
 ## Storage
 
