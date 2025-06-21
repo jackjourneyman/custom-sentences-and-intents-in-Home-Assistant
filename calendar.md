@@ -93,6 +93,44 @@ CustomCalendarTomorrow:
 
 ```calendar.mycalendar``` Substitute the name of your calendar entity.
 
+----------------------------------------------------------
+
+# What's in the diary next week?
+
+## Custom sentence
+```
+language: "en"
+intents:
+  CustomCalendarWeek:
+    data:
+      - sentences:
+          - "(What's | What is) in the (calendar | diary) [for] (this | next) week"
+```
+## Intent
+```
+CustomCalendarWeek:
+  action:
+    - action: calendar.get_events
+      target:
+        entity_id: calendar.stiltjack
+      data:
+        start_date_time: "{{ (now() + timedelta(days=1)).strftime('%Y-%m-%d 00:00:00') }}"
+        end_date_time: "{{ (now() + timedelta(days=7)).strftime('%Y-%m-%d 00:00:00') }}"
+      response_variable: diary
+    - action: script.willow_tts_response
+      data:
+        tts_sentence: >-
+          {% for event in diary['calendar.stiltjack'].events | sort(attribute='start') %} 
+          {% set day = event.start %}
+          On {{ as_timestamp(day) | timestamp_custom('%A') }} you've got, {{ event.summary }}.
+          {% endfor %}
+```
+## Notes
+
+**In the intent...**
+
+```calendar.mycalendar``` Substitute the name of your calendar entity.
+
 
 
 
