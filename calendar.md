@@ -35,6 +35,12 @@ CustomCalendarToday:
 ```
 ## Notes
 
+**In the custom sentence**
+
+```"(What's | What is) in the (calendar | diary)"``` is likely to create a collision on its own. To avoid this, define a unique sentence first.
+
+**In the intent...**
+
 ```calendar.mycalendar``` Substitute the name of your calendar entity.
 
 
