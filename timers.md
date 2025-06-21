@@ -5,6 +5,8 @@ Built-in sentences for timers only work on ESPHome and Wyoming voice satellites,
 You can control timers previously created in HA with the [timer helper](https://www.home-assistant.io/integrations/timer/), however.
 
 # Start timer
+
+## Intent
 ```
 CustomTimerSet:
   action:
@@ -15,7 +17,10 @@ CustomTimerSet:
       data:
         tts_sentence: "{{ states('sensor.finished_phrase') }}. Timer started."
 ```
+-------------------------------------
 # Stop timer
+
+## Intent
 ```
 CustomTimerCancel:
   action:
@@ -24,7 +29,10 @@ CustomTimerCancel:
       data:
         tts_sentence: "{{ states('sensor.finished_phrase') }}. Timer cancelled."
 ```
+-------------------------------------
 # Pause timer
+
+## Intent
 ```
 CustomTimerPause:
   action:
@@ -33,7 +41,10 @@ CustomTimerPause:
       data:
         tts_sentence: "{{ states('sensor.finished_phrase') }}. Timer paused."
 ```
+--------------------------------------
 # Resume timer
+
+## Intent
 ```
 CustomTimerResume:
   action:
