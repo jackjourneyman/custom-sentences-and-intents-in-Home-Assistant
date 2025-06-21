@@ -52,10 +52,10 @@ intents:
   QueryShoppingListItem:
     data:
       - sentences:
-          - (did | have) i (put | add) {item} (on | to) (my|the) shopping list
-          - have I added {item} to (my | the) shopping list
-          - is {item} on (my|the) shopping list
-          - have I got {item} (on | in) (my | the) shopping list
+          - "(did | have) i (put | add) {item} (on | to) (my|the) shopping list"
+          - "have I added {item} to (my | the) shopping list"
+          - "is {item} on (my|the) shopping list"
+          - "have I got {item} (on | in) (my | the) shopping list"
 lists:
   item:
     wildcard: true
