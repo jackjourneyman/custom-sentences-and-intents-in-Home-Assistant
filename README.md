@@ -9,7 +9,7 @@ There are good reasons for wanting to use custom sentences and intents in Home A
 
 Documentation exists for [custom sentence syntax](https://developers.home-assistant.io/docs/voice/intent-recognition/template-sentence-syntax/), but there is very little for intents. They are referred to as [Intent scripts](https://www.home-assistant.io/integrations/intent_script/) but they are actually an odd mixture of script and template.
    
-Templates can be used to construct phrases outside the intent. This is good practice if you want to maintain your intents easily. It also means that common phrases can be reused in different intents.
+Modularity is to be encouraged - it doesn't all have to be crammed into the intent. Templates can be used to construct common phrases that can be repeated in different intents. Scripts can be used to carry out series of actions.
 
 Please make comments and suggestions in the [discussions page](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/discussions)
 
