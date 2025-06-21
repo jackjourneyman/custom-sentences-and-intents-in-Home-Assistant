@@ -70,7 +70,7 @@ intents:
 ```
 ## Speakers
 
-By default Assist responds to built-in commands through the voice assistant that heard the command. This is difficult to change short of hacking the voice assistant device itself. (If your voice assistant is an ESPHome device some [configuration tools](https://esphome.io/components/voice_assistant.html) are provided.)
+By default Assist responds to built-in commands through the voice assistant that heard the command. This is difficult to change short of hacking the voice assistant device itself. (If your voice assistant is an ESPHome device there are some [configuration tools](https://esphome.io/components/voice_assistant.html).)
 
 This is one reason for choosing to use custom sentences and intents - the response can be played through any speaker you like.
 
