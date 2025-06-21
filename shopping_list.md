@@ -98,8 +98,8 @@ intents:
   AddShoppingListItem:
     data:
       - sentences:
-          - add {item} to (my|the) shopping list
-          - put {item} on (my|the) shopping list
+          - "add {item} to (my|the) shopping list"
+          - "put {item} on (my|the) shopping list"
 lists:
   item:
     wildcard: true
@@ -131,6 +131,56 @@ AddShoppingListItem:
             - action: script.tts_response
               data:
                 tts_sentence: "Looks like you've already got {{ item }} on the list"
+```
+**Notes**
+
+```found: "{{ shopping_list_data['todo.shopping_list']['items']|selectattr('summary','search',item)|list|count > 0 }}"``` searches the shopping list for {{item}} and returns true or false.
+
+```{{ states('sensor.finished_phrase') }}``` A [random phrase](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/random_phrases.md) to start off the response - "OK done", etc.
+
+## Take coffee off the shopping list
+
+**Custom sentence**
+```
+language: "en"
+intents:
+  DeleteShoppingListItem:
+    data:
+      - sentences:
+          - "remove {item} from (my|the) shopping list"
+          - "delete {item} from (my|the) shopping list"
+          - "take {item} off (my|the) shopping list"
+          - "clear {item} from (my|the) shopping list"
+lists:
+  item:
+    wildcard: true
+```
+**Intent**
+```
+DeleteShoppingListItem:
+  action:
+    - action: todo.get_items
+      target:
+        entity_id: todo.shopping_list
+      data:
+        status: needs_action
+      response_variable: shopping_list_data
+    - variables:
+        found: "{{ shopping_list_data['todo.shopping_list']['items']|selectattr('summary','search',item)|list|count > 0 }}"
+    - choose:
+        - conditions: "{{ found }}"
+          sequence:
+            - action: shopping_list.remove_item
+              data:
+                name: "{{ item }}"
+            - action: script.tts_response
+              data:
+                tts_sentence: "{{ states('sensor.finished_phrase') }}. Removed {{ item }}"                
+        - conditions: "{{ not found }}"
+          sequence:
+            - action: script.tts_response
+              data:
+                tts_sentence: "Sorry. Can't find {{ item }} in the list"
 ```
 **Notes**
 
