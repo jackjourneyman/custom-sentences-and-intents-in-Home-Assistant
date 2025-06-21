@@ -4,6 +4,8 @@ Built-in sentences for timers only work on ESPHome and Wyoming voice satellites,
 
 You can control timers previously created in HA with the [timer helper](https://www.home-assistant.io/integrations/timer/), however.
 
+# Start timer
+```
 CustomTimerSet:
   action:
     - action: script.voice_timer_2
@@ -12,7 +14,7 @@ CustomTimerSet:
     - action: script.willow_tts_response
       data:
         tts_sentence: "{{ states('sensor.finished_phrase') }}. Timer started."
-
+```
 # Stop timer
 ```
 CustomTimerCancel:
