@@ -1,6 +1,6 @@
 # Random Phrases
 
-If you want to give your voice a bit of character, you can add random phrases to your intents. The same selection of phrases can get a bit old, however, even if there are half a dozen of them. This template includes a few empty strings, so the phrase will only *sometimes* be heard. The phrase changes every minute.
+If you want to give your voice a bit of character, you can add random phrases to your intents. The same selection of phrases can get a bit old, however, even if there are half a dozen of them. These templates include a few empty strings, so the phrases will only *sometimes* be heard. The phrases change every minute.
 
 ```
   - trigger:
@@ -26,3 +26,26 @@ If you want to give your voice a bit of character, you can add random phrases to
 ```
 
 To include this in an intent sentence, add ```{{ states('sensor.starter_phrase') }}```.
+
+```
+  - trigger:
+      platform: time_pattern
+      minutes: /1
+    sensor:
+      - name: Finished phrase
+        unique_id: f3951711-e158-472e-a9ba-6c2804c860c5
+        state: >
+          {{ [
+          "Done.",
+          "",
+          "Okay.",
+          "",
+          "Okay. Done.",
+          "",
+          "Right. Done.",
+          "",
+          "Right.",
+          ""
+          ] | random }}
+```
+To include this in an intent sentence, add ```{{ states('sensor.finished_phrase') }}```.
