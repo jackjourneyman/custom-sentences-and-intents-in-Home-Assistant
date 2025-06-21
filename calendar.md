@@ -22,7 +22,7 @@ CustomCalendarToday:
         duration:
           hours: "{{ 23 - now().strftime('%H') | float(0) }}"
       response_variable: diary
-    - action: script.willow_tts_response
+    - action: script.tts_response
       data:
         tts_sentence: >-
           {% if states('sensor.number_of_events_today') | float(0) > 0 %}
@@ -76,7 +76,7 @@ CustomCalendarTomorrow:
         start_date_time: "{{ (now() + timedelta(days=1)).strftime('%Y-%m-%d 00:00:00') }}"
         end_date_time: "{{ (now() + timedelta(days=2)).strftime('%Y-%m-%d 00:00:00') }}"
       response_variable: diary
-    - action: script.willow_tts_response
+    - action: script.tts_response
       data:
         tts_sentence: >-
           {% if states('sensor.number_of_events_tomorrow') | float(0) > 0 %}
@@ -120,7 +120,7 @@ CustomCalendarWeek:
         start_date_time: "{{ (now() + timedelta(days=1)).strftime('%Y-%m-%d 00:00:00') }}"
         end_date_time: "{{ (now() + timedelta(days=7)).strftime('%Y-%m-%d 00:00:00') }}"
       response_variable: diary
-    - action: script.willow_tts_response
+    - action: script.tts_response
       data:
         tts_sentence: >-
           {% for event in diary['calendar.mycalendar'].events | sort(attribute='start') %} 
