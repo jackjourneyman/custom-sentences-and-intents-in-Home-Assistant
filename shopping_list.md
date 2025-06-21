@@ -43,7 +43,7 @@ This assumes the [shopping list](https://www.home-assistant.io/integrations/shop
 
 -----------------------------------------
 
-## Have I got coffee on the shopping list
+## Have I got coffee on the shopping list?
 
 **Custom sentence**
 ```
