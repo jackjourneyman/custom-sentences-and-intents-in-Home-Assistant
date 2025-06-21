@@ -35,7 +35,7 @@ CustomCalendarToday:
 ```
 ## Notes
 
-**In the custom sentence**
+**In the custom sentence...**
 
 ```"(What's | What is) in the (calendar | diary)"``` is likely to create a [collision](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/tree/main?tab=readme-ov-file#collisions) on its own. To avoid this, make the primary sentence unique.
 
