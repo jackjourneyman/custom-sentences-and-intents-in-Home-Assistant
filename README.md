@@ -11,6 +11,7 @@ Documentation exists for [custom sentence syntax](https://developers.home-assist
    
 Templates can be used to construct phrases outside the intent. This is good practice if you want to maintain your intents easily. It also means that common phrases can be reused in different intents.
 
+Please make comments and suggestions in the [discussions page](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/discussions)
 
 ## Index
 
