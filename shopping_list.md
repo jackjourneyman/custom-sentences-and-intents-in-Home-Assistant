@@ -1,6 +1,6 @@
 # Shopping lists
 
-## What's on the shopping list
+## What's on the shopping list?
 
 **Custom sentence**
 ```
