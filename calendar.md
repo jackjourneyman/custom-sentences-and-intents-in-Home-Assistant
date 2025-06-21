@@ -51,6 +51,8 @@ Fetches calendar events for the rest of the day.
 
 # What's in the diary tomorrow?
 
+_________________________________________
+
 ## Custom sentence
 ```
 language: "en"
