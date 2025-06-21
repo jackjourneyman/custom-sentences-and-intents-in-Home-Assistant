@@ -19,6 +19,8 @@ Please make comments and suggestions in the [discussions page](https://github.co
 
 [Calendar](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/calendar.md)
 
+[Shopping lists](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/shopping_list.md)
+
 [Timers](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/timers.md)
 
 [World Clock](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/world_clock.md)
