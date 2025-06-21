@@ -22,7 +22,7 @@ CustomShoppingList:
       data:
         status: needs_action
       response_variable: shopping_list_data
-    - action: script.willow_tts_response
+    - action: script.tts_response
       data:
         tts_sentence: >-
           {% if states('todo.shopping_list') | float(0) > 0 %}
@@ -35,4 +35,8 @@ CustomShoppingList:
 ```
 **Notes**
 
+This assumes the [shopping list](https://www.home-assistant.io/integrations/shopping_list/) integration has been set up in Home Assistant.
+
 ```{{ states('sensor.starter_phrase') }}``` A [random phrase](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/random_phrases.md) to start off the response - "OK then", etc.
+
+```{{' and '.join((x|join(', ')).rsplit(', ', 1)) }}``` inserts "and" between the last two items.
