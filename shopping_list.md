@@ -136,7 +136,7 @@ AddShoppingListItem:
 
 ```found: "{{ shopping_list_data['todo.shopping_list']['items']|selectattr('summary','search',item)|list|count > 0 }}"``` searches the shopping list for {{item}} and returns true or false.
 
-```{{ states('sensor.finished_phrase') }}``` A [random phrase](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/random_phrases.md) to start off the response - "OK done", etc.
+```{{ states('sensor.finished_phrase') }}``` A [random phrase](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/random_phrases.md) to finish off the response - "OK done", etc.
 
 ## Take coffee off the shopping list
 
@@ -186,4 +186,4 @@ DeleteShoppingListItem:
 
 ```found: "{{ shopping_list_data['todo.shopping_list']['items']|selectattr('summary','search',item)|list|count > 0 }}"``` searches the shopping list for {{item}} and returns true or false.
 
-```{{ states('sensor.finished_phrase') }}``` A [random phrase](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/random_phrases.md) to start off the response - "OK done", etc.
+```{{ states('sensor.finished_phrase') }}``` A [random phrase](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/random_phrases.md) to finish off the response - "OK done", etc.
