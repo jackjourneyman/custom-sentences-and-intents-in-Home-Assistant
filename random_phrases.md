@@ -1,6 +1,6 @@
 # Random Phrases
 
-If you want to give your voice a bit of character, you can add random phrases to your intents. The same selection of phrases can get a bit old, however, even if there are half a dozen of them. This template includes a few empty strings, so the phrase will only *sometimes* be heard.
+If you want to give your voice a bit of character, you can add random phrases to your intents. The same selection of phrases can get a bit old, however, even if there are half a dozen of them. This template includes a few empty strings, so the phrase will only *sometimes* be heard. The phrase changes every minute.
 
 ```
   - trigger:
