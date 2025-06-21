@@ -27,7 +27,7 @@ This repository aims to provide a few working examples.
 
 ## Format
 
-Examples may be in four parts:
+Examples may be in three parts:
 
 * Custom sentence
 * Intent
