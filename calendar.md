@@ -134,6 +134,9 @@ CustomCalendarWeek:
 
 ```calendar.mycalendar``` Substitute the name of your calendar entity.
 
+```end_date_time: "{{ (now() + timedelta(days=7)).strftime('%Y-%m-%d 00:00:00') }}"``` This provides calendar entries for the next seven days, not for the week beginning next Monday...
+
+
 
 
 
