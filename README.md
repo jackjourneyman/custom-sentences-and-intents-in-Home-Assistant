@@ -65,6 +65,7 @@ intents:
   CustomCalendarToday:
     data:
       - sentences:
+          - "(What's | What is) happening"
           - "(What's | What is) in the (calendar | diary) [for] today"
           - "(What's | What is) in the (calendar | diary)"
 ```
