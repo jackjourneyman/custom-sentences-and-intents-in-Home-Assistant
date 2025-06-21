@@ -34,4 +34,5 @@ CustomShoppingList:
           {% endif %}
 ```
 **Notes**
+
 ```{{ states('sensor.starter_phrase') }}``` A random phrase to start off the response - "OK then, etc.
