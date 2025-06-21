@@ -52,6 +52,11 @@ But if the user gave a name not on the list, the intent would fall back on the d
 ```
 This takes the value passed from the custom sentence ```city``` and adds it to the string ```sensor.worldclock_``` to create a sensor name, then replaces spaces with underscores (New York becomes New_York) and changes everything to lowercase. The state of the resulting sensor is stored in the variable ```time```.
 
+```
+{% if time != 'unknown' and time != 'unavailable' %}
+```
+If the sensor hasn't been defined in the [worldclock](https://www.home-assistant.io/integrations/worldclock/) integration the value of ```sensor.worldclock_xxxx```. will be "unknown".
+
 **Templates...**
 
 ```sensor.starter_phrase``` is an optional template sensor containing a [random (and meaningless) phrase](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/random_phrases.md) to start the sentence with. Phrases change every minute. Notice that half the phrases are empty strings, so the expression will only be heard 50% of the time.
