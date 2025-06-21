@@ -107,7 +107,7 @@ alias: Voice timer
 ```
 ## Notes
 
-Most of the work here is done in the custom sentence, which tries to cover every possible permutation needed to deliver hours, minutes and seconds to the intent. The intent itslef is quite simple - it just launches a script to set the timer. This makes maintenance easier, particularly if you prefer to use the UI.
+Most of the work here is done in the custom sentence, which tries to cover every possible permutation needed to deliver hours, minutes and seconds to the intent. The intent itself is quite simple - it just launches a script to set the timer. Using a script makes maintenance easier, particularly if you prefer to use the UI.
 
 ```{{ states('sensor.finished_phrase') }}``` is a random phrase equivalent to "OK, done that."
 
