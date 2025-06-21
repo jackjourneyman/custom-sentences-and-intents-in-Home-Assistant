@@ -13,15 +13,15 @@ This repository aims to provide a few working examples.
 
 ## Index
 
-# Intents
+### Intents
 
 [World Clock](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/world_clock.md)
 
-# Scripts
+### Scripts
 
 [Speaker script](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/speaker_script.md)
 
-# Templates
+### Templates
 
 ## Format
 
