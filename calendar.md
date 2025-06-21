@@ -112,7 +112,7 @@ CustomCalendarWeek:
   action:
     - action: calendar.get_events
       target:
-        entity_id: calendar.stiltjack
+        entity_id: calendar.mycalendar
       data:
         start_date_time: "{{ (now() + timedelta(days=1)).strftime('%Y-%m-%d 00:00:00') }}"
         end_date_time: "{{ (now() + timedelta(days=7)).strftime('%Y-%m-%d 00:00:00') }}"
@@ -120,7 +120,7 @@ CustomCalendarWeek:
     - action: script.willow_tts_response
       data:
         tts_sentence: >-
-          {% for event in diary['calendar.stiltjack'].events | sort(attribute='start') %} 
+          {% for event in diary['calendar.mycalendar'].events | sort(attribute='start') %} 
           {% set day = event.start %}
           On {{ as_timestamp(day) | timestamp_custom('%A') }} you've got, {{ event.summary }}.
           {% endfor %}
