@@ -89,6 +89,16 @@ CustomTimerSet:
 -------------------------------------
 # Stop timer
 
+## Custom sentence
+```
+language: "en"
+intents:
+  CustomTimerCancel:
+    data:
+      - sentences:
+          - "(stop | cancel) [the] timer"
+```
+
 ## Intent
 ```
 CustomTimerCancel:
