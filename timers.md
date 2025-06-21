@@ -2,7 +2,7 @@
 
 Built-in sentences for timers only work on ESPHome and Wyoming voice satellites, and even then the timer runs locally on the device - they are not exposed as entites in Home Assistant itself - which means you can't show progress on a dashboard, for example.
 
-You can control timers previously created in HA with the [timer helper](https://www.home-assistant.io/integrations/timer/), however.
+You can control [timer helpers](https://www.home-assistant.io/integrations/timer/) previously created in HA, however.
 
 # Start timer
 
@@ -111,6 +111,16 @@ CustomTimerCancel:
 -------------------------------------
 # Pause timer
 
+## Custom sentence
+```
+language: "en"
+intents:
+  CustomTimerPause:
+    data:
+      - sentences:
+          - "(pause | hold) [the] timer"
+```
+
 ## Intent
 ```
 CustomTimerPause:
@@ -122,6 +132,19 @@ CustomTimerPause:
 ```
 --------------------------------------
 # Resume timer
+
+## Custom sentence
+
+```
+language: "en"
+intents:
+  CustomTimerResume:
+    data:
+      - sentences:
+          - "start [the] timer again"
+          - "(restart | resume) [the] timer"
+          - "carry on [with] the timer"
+```
 
 ## Intent
 ```
