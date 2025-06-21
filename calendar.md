@@ -43,5 +43,10 @@ CustomCalendarToday:
 
 ```calendar.mycalendar``` Substitute the name of your calendar entity.
 
+```        duration:
+             hours: "{{ 23 - now().strftime('%H') | float(0) }}"
+```
+Fetches calendar events for the rest of the day.
+
 
 
