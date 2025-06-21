@@ -32,9 +32,8 @@ Examples may be in four parts:
 * Custom sentence
 * Intent
 * Notes
-* Templates
 
-The fourth part contains templates which may be used to construct phrases outside the intent. This is good practice if you want to maintain your intents easily. It also means that common phrases can be reused in different intents.
+You can use templates to construct phrases outside the intent. This is good practice if you want to maintain your intents easily. It also means that common phrases can be reused in different intents.
 
 ## Storage
 
