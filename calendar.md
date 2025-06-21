@@ -16,7 +16,7 @@ CustomCalendarToday:
   action:
     - action: calendar.get_events
       target:
-        entity_id: calendar.stiltjack
+        entity_id: calendar.mycalendar
       data:
         duration:
           hours: "{{ 23 - now().strftime('%H') | float(0) }}"
@@ -26,7 +26,7 @@ CustomCalendarToday:
         tts_sentence: >-
           {% if states('sensor.number_of_events_today') | float(0) > 0 %}
           Today you've got, 
-          {% for event in diary['calendar.stiltjack'].events %} 
+          {% for event in diary['calendar.mycalendar'].events %} 
           {{ event.summary }}.
           {% endfor %}
           {% else %}
@@ -34,5 +34,8 @@ CustomCalendarToday:
           {% endif %}
 ```
 ## Notes
+
+```calendar.mycalendar``` Substitute the name of your calendar entity.
+
 
 
