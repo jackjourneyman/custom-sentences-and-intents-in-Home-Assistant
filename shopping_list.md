@@ -84,4 +84,54 @@ QueryShoppingListItem:
 ```
 **Notes**
 
+Not just coffee, obviously...
+
+```found: "{{ shopping_list_data['todo.shopping_list']['items']|selectattr('summary','search',item)|list|count > 0 }}"``` searches the shopping list for {{item}} and returns true or false.
+
+---------------------------------
+## Put coffee on the shopping list
+
+**Custom sentence**
+```
+language: "en"
+intents:
+  AddShoppingListItem:
+    data:
+      - sentences:
+          - add {item} to (my|the) shopping list
+          - put {item} on (my|the) shopping list
+lists:
+  item:
+    wildcard: true
+```
+
+**Intent**
+```
+AddShoppingListItem:
+  action:
+    - action: todo.get_items
+      target:
+        entity_id: todo.shopping_list
+      data:
+        status: needs_action
+      response_variable: shopping_list_data
+    - variables:
+        found: "{{ shopping_list_data['todo.shopping_list']['items']|selectattr('summary','search',item)|list|count > 0 }}"
+    - choose:
+        - conditions: "{{ not found }}"
+          sequence:
+            - action: shopping_list.add_item
+              data:
+                name: "{{ item }}"
+            - action: script.tts_response
+              data:
+                tts_sentence: "{{ states('sensor.finished_phrase') }}. Added {{ item }}"                
+        - conditions: "{{ found }}"
+          sequence:
+            - action: script.tts_response
+              data:
+                tts_sentence: "Looks like you've already got {{ item }} on the list"
+```
+**Notes**
+
 ```found: "{{ shopping_list_data['todo.shopping_list']['items']|selectattr('summary','search',item)|list|count > 0 }}"``` searches the shopping list for {{item}} and returns true or false.
