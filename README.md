@@ -23,7 +23,7 @@ This repository aims to provide a few working examples.
 
 ### Templates
 
-
+[Random phrases](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/random_phrases.md)
 
 ## Format
 
