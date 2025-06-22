@@ -33,7 +33,6 @@ To include this in an intent sentence, add ```{{ states('sensor.starter_phrase')
       minutes: /1
     sensor:
       - name: Finished phrase
-        unique_id: f3951711-e158-472e-a9ba-6c2804c860c5
         state: >
           {{ [
           "Done.",
