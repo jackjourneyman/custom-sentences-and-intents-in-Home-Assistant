@@ -2,7 +2,7 @@
 
 There is a set of [recommended codes](https://developers.home-assistant.io/docs/core/entity/weather) for weather conditions in Home Assistant weather integrations (recommended because they are included in translation files and will be displayed with the correct icon).
 
-
+![Weather codes](path/to/image.png)
 
 These will appear as the state of the weather entity.
 
