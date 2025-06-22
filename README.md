@@ -35,6 +35,8 @@ Please make comments and suggestions in the [discussions page](https://github.co
 
 [Random phrases](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/random_phrases.md)
 
+[Weather](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/weather.md)
+
 &nbsp;
 ## Storage
 
