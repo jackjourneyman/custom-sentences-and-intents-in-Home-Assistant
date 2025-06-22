@@ -1,6 +1,6 @@
 # Custom sentences and intents in Home Assistant
 
-There are good reasons for wanting to use custom sentences and intents in Home Assistant.
+There are good reasons for using custom sentences and intents in Home Assistant.
 
 * A built-in sentence may not exist yet
 * The built-in sentence may not return the exact response you are looking for
