@@ -14,9 +14,9 @@ template:
   - sensor:
       - name: Weather voice
         state: >
-          {% if is_state('weather.your_weather_entity', 'partlycloudy') %}
+          {% if is_state('weather.your_weather_entity', 'partlycloudy') %}      # Change to ID of your weather entity
               partly cloudy
           {% else %}
-              {{ states('weather.your_weather_entity') | replace('-', ' ') }}
+              {{ states('weather.your_weather_entity') | replace('-', ' ') }}   # Change to ID of your weather entity
           {% endif %}
 ```
