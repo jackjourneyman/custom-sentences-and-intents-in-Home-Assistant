@@ -8,7 +8,7 @@ Some of them are challenging for TTS because of the hyphens, and Amazon Polly at
 
 You can iron out most of these problems with a short template:
 ```
-# Correct text in weather summary that voice assistants find hard to pronounce
+# Correct text that voice assistants find hard to pronounce in weather summary 
 
 template:
   - sensor:
