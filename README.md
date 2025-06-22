@@ -59,7 +59,7 @@ For more information, see [splitting configuration.yaml](https://www.home-assist
 
 In theory custom sentences should take precedence over built-in sentences, but this doesn't always happen. It's a particular problem when the custom sentence contains the words "in" or "on" - "What's in the diary" is likely to give the error "No area named diary".
 
-You can reduce the chances of this by creating a unique sentence first, then adding the problem sentence as an alernative. For example:
+You can reduce the chances of this by creating a unique sentence first, then adding the problem sentence as an alternative. For example:
 ```
 language: "en"
 intents:
