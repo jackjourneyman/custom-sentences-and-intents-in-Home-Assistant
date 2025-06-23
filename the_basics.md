@@ -175,7 +175,7 @@ QueryShoppingListItem:
 
 > Notice that in TTS statements and HA commands the slot value ```item``` is enclosed in curly brackets. In the template there are no curly brackets, and since this is a variable not a HA sensor value no normal brackets or quotes are needed either. More details [here](https://community.home-assistant.io/t/how-to-read-a-template-in-yaml-the-why-and-how-of-all-those-delimiters/843841).
 
-In the previous example the ```if... else...``` structure was in the TTS statement. You can also use the ```choose:``` action specify different paths with different actions.
+In the previous example the ```if... else...``` structure was in the TTS statement. You can also use the ```choose:``` action to specify different paths with different actions.
 ```
 DeleteShoppingListItem:
   action:
