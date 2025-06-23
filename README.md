@@ -38,38 +38,6 @@ Please make comments and suggestions in the [discussions page](https://github.co
 [Weather](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/weather.md)
 
 &nbsp;
-## Storage
-
-Custom sentences have to be saved as yaml files in ```config/custom_sentences/<language_code>/``` with a separate file for each sentence. Being in English, the examples here are saved in ```config/custom_sentences/en/```. The name of the yaml file doesn't matter, but they should all begin with
-```
-language: "en"
-intents:
-  <IntentName>:
-```
-where ```<IntentName>``` is the name of the intent the sentence points to.
-
-Intents are stored in ```configuration.yaml```, but their number will grow rapidly (the same with templates), so it is good practice to keep them in yaml files of their own, then add this to ```configuration.yaml```
-```
-intent_script: !include intents.yaml
-template: !include templates.yaml
-```
-For more information, see [splitting configuration.yaml](https://www.home-assistant.io/docs/configuration/splitting_configuration/)
-
-## "Collisions"
-
-In theory custom sentences should take precedence over built-in sentences, but this doesn't always happen. It's a particular problem when the custom sentence contains the words "in" or "on" - "What's in the diary" is likely to give the error "No area named diary".
-
-You can reduce the chances of this by creating a unique sentence first, then adding the problem sentence as an alternative. For example:
-```
-language: "en"
-intents:
-  CustomCalendarToday:
-    data:
-      - sentences:
-          - "(What's | What is) happening"
-          - "(What's | What is) in the (calendar | diary) [for] today"
-          - "(What's | What is) in the (calendar | diary)"
-```
 ## Speakers
 
 By default Assist responds to built-in commands through the voice assistant that heard the command. This is difficult to change short of hacking the voice assistant device itself. (If your voice assistant is an ESPHome device there are some [configuration tools](https://esphome.io/components/voice_assistant.html).)
