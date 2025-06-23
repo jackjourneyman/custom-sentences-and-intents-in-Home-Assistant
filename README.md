@@ -17,6 +17,8 @@ Please make comments and suggestions in the [discussions page](https://github.co
 
 ## Index
 
+[The basics](https://github.com/jackjourneyman/Custom_sentences_and_intents_in_Home_Assistant/blob/main/the_basics.md)
+
 ### Intents
 
 [Calendar](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/calendar.md)
