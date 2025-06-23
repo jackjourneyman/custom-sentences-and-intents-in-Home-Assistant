@@ -92,9 +92,7 @@ lists:
   album:
     wildcard: true
 ```
-> **Note:** If you specify a list of options and the user provides a value not on the list, you will get the default error message from your voice assistant - "Sorry, I don't understand" or something similar.
->
-> If you specify a wildcard, it's up to you to use the intent to filter out invalid options and provide an error message.
+> **Note:** If you specify a list of options and the user provides a value not on the list, you will get the default error message from your voice assistant - "Sorry, I don't understand" or something similar. If you specify a wildcard, it's up to you to use the intent to filter out invalid options and provide an error message.
 
 If your slot value is a number, you can specify the range.
 ```
