@@ -27,7 +27,7 @@ Please make comments and suggestions in the [discussions page](https://github.co
 
 [Timers](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/timers.md)
 
-[World Clock](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/world_clock.md)
+[World clock](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/world_clock.md)
 
 ### Scripts
 
