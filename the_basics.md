@@ -64,11 +64,10 @@ Slots are placeholders in custom sentences containing values to be passed to the
           - "play {album} by {artist}"
 ```
 
-```{album}``` and ```{artist}``` are slots. When a user says "Play Aqualung by Jethro Tull," the slot ```album``` captures "Aqualung" and the slot ```artist``` captures "Jethro Tull". The matched intent would be able to generate the TTS sentence
+```{album}``` and ```{artist}``` are slots. When a user says "Play Aqualung by Jethro Tull", the slot ```album``` captures "Aqualung" and the slot ```artist``` captures "Jethro Tull". The matched intent would be able to generate the TTS sentence
 
 ```
 "OK. Playing {{album}} by {{artist}}"
-
 ```
 
 If your slot value is a string, you can restrict the user to a list of valid options
