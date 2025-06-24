@@ -92,4 +92,4 @@ Then cover every possible permutation of hours and minutes...
 
 ## Notes
 
-```now().strftime('%M') | int % 5 == 0``` minutes after or before then hour are divisible by five
+```now().strftime('%M') | int % 5 == 0``` minutes after or before the hour are divisible by five, therefore "ten past" rather than "ten minutes past".
