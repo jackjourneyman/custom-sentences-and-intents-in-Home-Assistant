@@ -54,7 +54,7 @@ The examples in this repository call a [script](https://github.com/jackjourneyma
       data:
         tts_sentence: "Whatever you need to say..."
 ```
-If you don't want to do this you can simply use ```speech``` instead:
+You can substitute your own script, of if you want responses to come through your voice assistant you simply use ```speech```:
 ```
     speech:
       text: Whatever you need to say...
