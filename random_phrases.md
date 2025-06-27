@@ -48,3 +48,24 @@ To include this in an intent sentence, add ```{{ states('sensor.starter_phrase')
           ] | random }}
 ```
 To include this in an intent sentence, add ```{{ states('sensor.finished_phrase') }}```.
+
+```
+  - trigger:
+      platform: time_pattern
+      minutes: /1
+    sensor:
+      - name: Wait phrase
+        state: >
+          {{ [
+          "Just a moment.",
+          "Just a minute.",
+          "Wait a moment.",
+          "Wait a minute.",
+          "Hang on.",
+          "Just need a moment.",
+          "Just need a minute."
+          ] | random }}
+```
+To include this in an intent sentence, add ```{{ states('sensor.wait_phrase') }}```.
+
+There are no empty strings - if there's going to be a delay you need to say so.
