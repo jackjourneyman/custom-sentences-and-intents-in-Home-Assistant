@@ -23,6 +23,8 @@ Please make comments and suggestions in the [discussions page](https://github.co
 
 [Calendar](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/calendar.md)
 
+[News headlines](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/news_headlines.md)
+
 [Shopping lists](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/shopping_list.md)
 
 [Speaking clock](https://github.com/jackjourneyman/Custom_sentences_and_intents_in_Home_Assistant/blob/main/speaking_clock.md)
