@@ -41,7 +41,7 @@ BbcNewsHeadlines:
         tts_sentence: "OK. {{ states('sensor.wait_phrase') }}"
     - delay:
         seconds: 5
-    - action: script.willow_tts_response
+    - action: script.tts_response
       data:
         tts_sentence: >-  
           {{ states('sensor.starter_phrase') }} These are the top headlines from the BBC."
