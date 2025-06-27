@@ -54,7 +54,7 @@ BbcNewsHeadlines:
 
 The value of the Feedparser sensor is the number of headlines available (usualy about 30). The headlines themselves are attributes:
 
-![Headlines](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/headlines.png)
+<img src="https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/headlines.png" alt="Headlines" width="300">
 
 ```{{ states('sensor.wait_phrase') }}``` A [random phrase](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/random_phrases.md) asking the user to wait - "Hang on a moment" etc.
 
