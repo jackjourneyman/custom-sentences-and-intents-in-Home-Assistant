@@ -36,7 +36,7 @@ intents:
 ```
 BbcNewsHeadlines:
   action:
-    - action: script.willow_tts_response
+    - action: script.tts_response
       data:
         tts_sentence: "OK. {{ states('sensor.wait_phrase') }}"
     - delay:
