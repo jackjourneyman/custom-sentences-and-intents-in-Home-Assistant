@@ -43,6 +43,10 @@ Please make comments and suggestions in the [discussions page](https://github.co
 
 [Weather](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/weather.md)
 
+### Resources
+
+[Tools and shortcuts](https://github.com/jackjourneyman/Custom_sentences_and_intents_in_Home_Assistant/blob/main/resources.md)
+
 &nbsp;
 ## Speakers
 
