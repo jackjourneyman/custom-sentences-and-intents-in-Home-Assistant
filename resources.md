@@ -1,5 +1,7 @@
 # Resources
 
+Useful tools and shortcuts.
+
 ## Time
 
 [Easy time](https://github.com/Petro31/easy-time-jinja)
