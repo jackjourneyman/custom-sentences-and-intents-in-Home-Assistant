@@ -127,7 +127,7 @@ For the minute values, ```in:``` is what the voice assistant hears, ```out:``` i
 
 ```time``` is the current hour expressed in terms of the 12-hour clock.
 
-```now_val``` and ```alarm val``` - times are much easier to compare if they are converted to seconds. ```timer.start``` also accepts duration in seconds.
+```now_val``` and ```alarm_val``` - times are much easier to compare if they are converted to seconds. ```timer.start``` also accepts duration in seconds.
 
 If the alarm time ```alarm``` is less than the current time (ie the next day) add 12 hours.
 
