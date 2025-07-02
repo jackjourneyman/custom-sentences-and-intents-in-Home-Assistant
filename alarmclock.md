@@ -131,7 +131,7 @@ For the minute values, ```in:``` is what the voice assistant hears, ```out:``` i
 
 If the alarm time ```alarm``` is less than the current time (ie the next day) add 12 hours.
 
-```sensor.finished_phrase``` is a [random phrase](https://github.com/jackjourneyman/Custom_sentences_and_intents_in_Home_Assistant/blob/main/random_phrases.md) to start the response. "OK then," etc.
+```sensor.finished_phrase``` is a [random phrase](https://github.com/jackjourneyman/Custom_sentences_and_intents_in_Home_Assistant/blob/main/random_phrases.md) to indicate completion. "OK done." etc.
 
 ## Timer finished...
 
