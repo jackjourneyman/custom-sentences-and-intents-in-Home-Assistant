@@ -62,7 +62,7 @@ lists:
       - in: "five to"
         out: "55"
       - in: "5 to"
-        out: "05"
+        out: "55"
   hour:
     range:  
       from: 1
