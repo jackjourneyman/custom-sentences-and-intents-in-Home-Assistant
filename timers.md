@@ -214,6 +214,8 @@ alias: Voice timer resume
 ---------------------------------------
 
 # Timer finished automation (optional)
+
+The event trigger will fire whenever *any* timer finishes, so if you have several you will need to find a way of distinguishing between them. One simple approach is to create an input_boolean flag for each one, to be turned on by the intent script that starts the timer, and off at the end of this automation.
 ```
 alias: Voice timer finished
 triggers:
