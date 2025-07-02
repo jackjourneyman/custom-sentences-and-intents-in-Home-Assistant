@@ -21,6 +21,8 @@ Please make comments and suggestions in the [discussions page](https://github.co
 
 ### Intents
 
+[Alarm clock](https://github.com/jackjourneyman/Custom_sentences_and_intents_in_Home_Assistant/blob/main/alarmclock.md)
+
 [Calendar](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/calendar.md)
 
 [News headlines](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/news_headlines.md)
