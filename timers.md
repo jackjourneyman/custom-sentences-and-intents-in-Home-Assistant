@@ -217,11 +217,8 @@ alias: Voice timer resume
 ```
 alias: Voice timer finished
 triggers:
-  - trigger: state
-    entity_id:
-      - timer.voice_timer
-    to: idle
-    from: active
+  - trigger: event
+    event_type: timer.finished
 conditions: []
 actions:
   - action: script.chime
