@@ -121,7 +121,7 @@ CustomAlarmclockSet:
 
 For the minute values, ```in:``` is what the voice assistant hears, ```out:``` is what it passes to the intent script. In the intent they still have to be treated as strings and converted to numbers with ```| int(0)``` or ```| float(0)```.
 
-You need to specity "twentyfive past" *and* "25 past" because the voice assistant will sometimes "hear" one, sometimes the other, depending on the user's voice, intonation, etc.
+You need to specity "twentyfive past" *and* "25 past" because the voice assistant will sometimes "hear" one, sometimes the other. This may be a result of the way the voice assistant handles sentence patterns - numbers below 20 are more common and may be treated as words - but it may also depend on the user's voice, intonation, etc.
 
 ## In the intent...
 
