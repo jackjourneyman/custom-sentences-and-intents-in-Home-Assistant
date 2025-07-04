@@ -55,7 +55,6 @@ Please make comments and suggestions in the [discussions page](https://github.co
 
 ----------------------------------------------
 
-&nbsp;
 ## Speakers
 
 By default Assist responds to built-in commands through the voice assistant that heard the command. This is difficult to change short of hacking the voice assistant device itself. (If your voice assistant is an ESPHome device there are some [configuration tools](https://esphome.io/components/voice_assistant.html).)
