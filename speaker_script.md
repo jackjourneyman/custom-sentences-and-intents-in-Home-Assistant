@@ -45,7 +45,7 @@ fields:
 ```
 ## Notes
 
-```input_boolean.use_cloud_service``` is a flag - an automation turns it on when the internet is available, off when it isn't.
+```input_boolean.use_cloud_service``` is an input_boolean flag - an automation turns it on when the internet is available, off when it isn't.
 
 ```sensor.speaker``` is a template sensor holding the entity ID of the speaker nearest the user. 
 There are several ways to figure out where the user is - motion sensors are quite effective, or you can use a tracking integration like [Bermuda](https://github.com/agittins/bermuda).
