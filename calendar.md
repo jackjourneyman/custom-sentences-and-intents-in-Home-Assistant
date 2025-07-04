@@ -38,7 +38,7 @@ CustomCalendarToday:
 
 **In the custom sentence...**
 
-```"(What's | What is) in the (calendar | diary)"``` is likely to create a [collision](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/tree/main?tab=readme-ov-file#collisions) on its own. To avoid this, make it a secondary sentence and make the primary sentence unique.
+```"(What's | What is) in the (calendar | diary)"``` is likely to create a [collision](https://github.com/jackjourneyman/Custom_sentences_and_intents_in_Home_Assistant/blob/main/the_basics.md#collisions) on its own. To avoid this, make it a secondary sentence and make the primary sentence unique.
 
 **In the intent...**
 
