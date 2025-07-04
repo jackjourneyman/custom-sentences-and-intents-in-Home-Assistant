@@ -14,6 +14,7 @@ Here are some simple, practical examples of what you can do.
 They are quite modular - everything doesn't have to be crammed into the intent. Templates can be used to construct common phrases that can be repeated in different places. Scripts can be used to carry out common actions, and these may be easier to maintain, particularly if you prefer to use the UI.
 
 Please make comments and suggestions in the [discussions page](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/discussions)
+----------------------------------------------
 
 ## Index
 
