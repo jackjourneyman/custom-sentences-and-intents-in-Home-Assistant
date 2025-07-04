@@ -2,6 +2,8 @@
 
 This human-friendly alarm clock uses colloquial expressions for times - "a quarter to five" rather than 4:45.
 
+It works by subtracting the current time from the target time specified by the user and using the result as the duration for a timer. The timer must already have been created in Home Assistant.
+
 As it stands it has limitations. You can only set the alarm for five minute intervals - "five past", "ten past" etc. - and the alarm can only be set 12 hours ahead.
 
 ## Custom sentence
