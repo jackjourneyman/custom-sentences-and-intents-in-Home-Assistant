@@ -51,9 +51,9 @@ Please make comments and suggestions in the [discussions page](https://github.co
 
 [Tools and shortcuts](https://github.com/jackjourneyman/Custom_sentences_and_intents_in_Home_Assistant/blob/main/resources.md)
 
-----------------------------------------------
-
 [Home Assistant Index](https://jackjourneyman.github.io/homeassistantindex/index.html)
+
+----------------------------------------------
 
 &nbsp;
 ## Speakers
