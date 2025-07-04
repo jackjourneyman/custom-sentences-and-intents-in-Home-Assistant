@@ -53,6 +53,10 @@ Please make comments and suggestions in the [discussions page](https://github.co
 
 [Home Assistant Index](https://jackjourneyman.github.io/homeassistantindex/index.html)
 
+### Tips and tricks
+
+[Wrinkles](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/wrinkles.md)
+
 ----------------------------------------------
 
 ## Speakers
