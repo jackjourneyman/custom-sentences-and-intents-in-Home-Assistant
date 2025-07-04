@@ -57,6 +57,8 @@ Please make comments and suggestions in the [discussions page](https://github.co
 
 [Home Assistant Index](https://jackjourneyman.github.io/homeassistantindex/index.html)
 
+[Home Assistant Cookbook](https://community.home-assistant.io/t/the-home-assistant-cookbook-index/707144)
+
 ----------------------------------------------
 
 ## Speakers
