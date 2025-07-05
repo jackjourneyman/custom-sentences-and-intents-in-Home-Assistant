@@ -4,7 +4,7 @@ Simple things make life easier. Some of these have been mentioned elsewhere.
 
 ### Assist debug
 
-Troubleshooting "I'm sorry I don't understand" is easier if you know what your voice assistant actually heard. Assist debug will tell you this (**Settings | Voice assistants**, the click on the overflow menu next to your voice assistant's name).
+Troubleshooting "I'm sorry I don't understand" is easier if you know what your voice assistant actually heard. Assist debug will tell you this (**Settings | Voice assistants**, the click on the "three dots" overflow menu next to your voice assistant's name).
 
 ![Assist debug](https://github.com/jackjourneyman/custom-sentences-and-intents-in-Home-Assistant/blob/main/assist_debug.png)
 
