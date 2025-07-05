@@ -12,6 +12,6 @@
 
 [Troubleshooting Assist](https://www.home-assistant.io/voice_control/troubleshooting/)
 
-[Voice Assistant configuration (ESPHome)](https://esphome.io/components/voice_assistant.html)
+[Voice assistant configuration (ESPHome)](https://esphome.io/components/voice_assistant.html)
 
 [Voice in Home Assistant](https://developers.home-assistant.io/docs/voice/overview)
